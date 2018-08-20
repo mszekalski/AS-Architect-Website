@@ -2,6 +2,7 @@ import React from "react";
 import { withRouter } from "react-router";
 import { Route, Link, NavLink } from "react-router-dom";
 import "../../../app/assets/stylesheets/sidebar.css";
+import profile from "../../../app/assets/images/profile.jpg";
 
 class Sidebar extends React.Component {
   constructor(props) {
@@ -11,7 +12,13 @@ class Sidebar extends React.Component {
   render() {
     return (
       <div className="sidebar">
-        <h1>Tony's Website</h1>
+        <div className="profile-container">
+          <img src={profile} alt="Logo" className="profile-pic" />
+        </div>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
       </div>
     );
   }

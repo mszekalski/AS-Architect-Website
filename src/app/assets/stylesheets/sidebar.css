@@ -1,7 +1,51 @@
+/* The sidebar menu */
 .sidebar {
-  height: 100%;
-  position: relative;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 230px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 0; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
   background-color: red;
-  min-width: 220px;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
   text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  background-color: #f1f1f1;
+  color: red;
+}
+
+.profile-pic {
+  width: 220px;
+  height: auto;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #f1f1f1;
+}
+
+.profile-container {
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }
