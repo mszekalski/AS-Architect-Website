@@ -46,7 +46,7 @@ nav {
 html,
 body,
 #root,
-.app {
+.App {
   height: 100%;
 }
 
@@ -61,4 +61,12 @@ ul {
 
 img {
   width: 100%;
+}
+
+
+.staging-area {
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+  box-sizing: border-box;
 }
